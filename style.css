@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header img{
+     width: 250px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+body{
+    background-color: white;
+    color: goldenrod;
+}
+
+.preços {
+    font: 20px;
+    font-weight: bold;
+    color: #D4AF37;
+    margin: 10px 0;
+}
+
+#carrinho {
+    display: block !important;
+}
+
+.lista-produtos{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista-produtos img{
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;   
+}
+
+.lista-produtos img:hover {
+    transform: scale(1.07);
+}
+
+.lista-produtos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+   box-shadow:  0 8px 20px goldenrod;
+    transition: 0.3s;
+    width: 240px;
+    min-height: 520px;
+    overflow: hidden;
+}
+
+.lista-produtos h3{
+    font-size: 16px;
+    margin: 12px 0;
+    line-height: 1.4;
+}
+
+.lista-produtos p{
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.lista-produtos .preços{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.lista-produtos button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    transition: 0.3s;
+}
+
+.lista-produtos button:hover{
+    background-color: gainsboro;
+    color: goldenrod;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #D4AF37;
+}
+
+#PRODUTOS {
+    padding: 60px 20px;
+    scroll-margin-top: 20px;
+}
+
+#PRODUTOS h2{
+    text-align: center;
+}
+
+#INÍCIO {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#INÍCIO a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: #D4AF37;
+    color: white;
+    text-decoration: none;
+}
+
+#INÍCIO h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#INÍCIO p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#INÍCIO button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    font-size: 16px;
+}
+
+#INÍCIO button:hover{
+    background-color: gainsboro;
+    color: goldenrod;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #D4AF37;
+}
+
+.lista-produtos > div:hover{
+    transform:  scale(1.03);
+}
+
+.cores{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.cor {
+    width: 35px !important;
+    height: 35px !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+    border: 1px solid #222 !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cor:hover {
+    transform: scale(1.1);
+}
+
+.Preto-Branco{
+    background: linear-gradient(90deg, black 50%, white 50%);
+}
+
+.Preto-Vermelho{
+    background: linear-gradient(90deg, black 50%, red 50%);
+}
+
+.branco-azul{
+    background-color: linear-gradient(to right, white 50%, blue 50%);
+}
+
+.cor.branco-azul {
+    width: 35px !important;
+    height: 35px !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+    max-width: 35px !important;
+    max-height: 35px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    border: 1px solid #222 !important;
+    border-radius: 50% !important;
+    background: linear-gradient(to right, white 50%, blue 50%) !important;
+    cursor: pointer;
+}
+
+.cor.selecionado{
+    border: 3px solid goldenrod !important;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+.tamanhos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.tamanho {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #D4AF37 !important;
+    border-radius: 4px;
+    background: white;
+    color: #222;
+
+    font-size: 11px;
+    line-height: 1;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tamanho.selecionado {
+    border: 3px solid #bdb6a0 !important;
+    color: white !important;
+    background-color: #D4AF37 !important;
+}
+
+.mensagem {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D4AF37;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    animation: aparecer 0.3s ease;
+}
+
+    @keyframes aparecer {
+        froma{
+            opacity: 0;
+            transform: translate(-50%, 20px)
+        }
+        to{
+            opacity: 1;
+            transform: translate(-50%, 0)
+        }
+    }
+
+
+.rosa {
+    background-color: pink !important;
+}
+
+.vinho {
+    background-color: #722f37 !important;
+}
+
+.shadow {
+    background-color: #444 !important; 
+}
+
+.comprar {
+    margin-top: 10px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background-color: goldenrod !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+}
+
+.comprar:hover {
+    background-color: #dedede !important;
+    transform: scale(1.05) !important;
+    color: #D4AF37 !important;
+}
+
+@media (max-width: 600px) {
+    .lista-produtos {
+        gap: 15px;
+    }
+    .lista-produtos > div {
+        width: 100%;
+        max-width: 280px;
+    }
+    .lista-produtos img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
